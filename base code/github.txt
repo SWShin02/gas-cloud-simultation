@@ -1,0 +1,1 @@
+https://github.com/phetsims/states-of-matter/blob/bcfb6da257f3d1234b2accbeea00a8a88bab3944/js/phase-changes/PhaseChangesIcon.js
