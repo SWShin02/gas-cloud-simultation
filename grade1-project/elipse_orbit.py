@@ -26,11 +26,13 @@ while -2 * np.pi < theta < 3 * np.pi:
     theta += d_theta
     
     w2 = r2w/r**2
-    v_r = (r2w*(w1 - w2) + (v_r - dv)**2)**0.5
+    v_r1 = v_r
+    if v_r - dv < 0:
+        v_r = -1
+    else:
+        v_r = 1
+    v_r *= (r2w*(w1 - w2) + (v_r1 - dv)**2)**0.5
     w1 = w2
-
-    if 1 < (theta / np.pi) % 2 < 2 :
-        v_r *= -1
 
     print (theta) 
 
